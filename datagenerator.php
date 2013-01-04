@@ -340,12 +340,4 @@ class DataGenerator {
     }
 
 }
-
-$dgen = new \SOTest\DataGenerator();
-$dgen->addField('username', new \SOTest\AlphabetField(6, 12));
-$dgen->addField('age', new \SOTest\IntegerField(10, 30));
-$dgen->addField('weight', new \SOTest\DoubleField(50, 80, 2));
-$dgen->addField('sex', new \SOTest\SetField(array('Male', 'Female')));
-
-print_r($dgen->generate());
 ?>
